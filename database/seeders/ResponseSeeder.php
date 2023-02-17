@@ -26,7 +26,7 @@ class ResponseSeeder extends Seeder
                 $data[] = [
                     'user_id' => $users->random(),
                     'response' => fake()->text(300),
-                    'image' => fake()->imageUrl(640, 480),
+                    'image' => fake()->imageUrl(200, 150),
                     'post_id' => $post,
                     'created_at' => $this->random_date()
                 ];

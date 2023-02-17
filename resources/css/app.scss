@@ -1,0 +1,54 @@
+@import 'bootstrap/scss/bootstrap';
+
+body{
+    margin-top:0px;
+    background:#eee;
+    color: #708090;
+}
+.icon-1x {
+    font-size: 24px !important;
+}
+a{
+    text-decoration:none;    
+}
+.text-primary, a.text-primary:focus, a.text-primary:hover {
+    color: #00ADBB!important;
+}
+.text-black, .text-hover-black:hover {
+    color: #000 !important;
+}
+.font-weight-bold {
+    font-weight: 700 !important;
+}
+header {
+    background: #00ADBB !important;
+}
+nav {
+    display: flex;
+    justify-content: end;
+}
+.navbar-brand, .navbar-access {
+    color: #fff !important;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+}
+a {
+    color: inherit !important;
+}
+#username {
+    color: #fff !important;
+}
+.pagination {
+    margin-bottom: 0px !important;
+}
+#pagination-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#add_post, #add_response {
+    color: #fff !important;
+}
+#new-post-form, #new-response-form {
+    display: none;
+}

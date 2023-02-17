@@ -26,7 +26,7 @@ class PostSeeder extends Seeder
                 'title' => fake()->sentence(),
                 'user_id' => $users->random(),
                 'problem' => fake()->text(500),
-                'image' => fake()->imageUrl(640, 480),
+                'image' => fake()->imageUrl(1272, 320),
                 'created_at' => $this->random_date()
             ];
         }

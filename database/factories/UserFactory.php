@@ -21,7 +21,7 @@ class UserFactory extends Factory
         $roles = ['admin', 'guest'];
         return [
             'name' => $name,
-            'username' => str_replace(" ", "_", strtolower($name)),
+            'username' => 'u_'.$name,
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
             'role'=> $roles[rand(0,1)],
