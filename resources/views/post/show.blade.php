@@ -11,7 +11,7 @@
                         <div>
                             @if ($post->image && \Illuminate\Support\Facades\Storage::has($post->image))
                                 <img src="{{ Storage::url($post->image) }}" width="100%" height="320" alt="">
-                            @else
+                            @elseif($post->image)
                                 <img src="{{ $post->image }}" width="100%" height="320" alt="">
                             @endif
                         </div>
