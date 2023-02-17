@@ -19,7 +19,6 @@ use App\Http\Controllers\PostController;
 Route::get('/', [PostController::class, 'index'])->name('home');
 Route::resource('/post', PostController::class)->only(['index','show','store']);
 Route::post('/response', [ResponseController::class, 'store'])->name('response.store');
-// Route::get('/search', [PostController::class, 'search'])->name('post.search');
 
 Route::prefix('auth')->group(function () {
     Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register');
